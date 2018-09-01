@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMTSchool", "LMTSchool\LMTSchool.csproj", "{CE71A77C-CE61-4F69-BC06-2CE80291D4DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{19D0EEB7-48EC-48E3-82F9-0FB853FD8B5C} = {19D0EEB7-48EC-48E3-82F9-0FB853FD8B5C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{19D0EEB7-48EC-48E3-82F9-0FB853FD8B5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{CE71A77C-CE61-4F69-BC06-2CE80291D4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE71A77C-CE61-4F69-BC06-2CE80291D4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE71A77C-CE61-4F69-BC06-2CE80291D4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D0EEB7-48EC-48E3-82F9-0FB853FD8B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D0EEB7-48EC-48E3-82F9-0FB853FD8B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D0EEB7-48EC-48E3-82F9-0FB853FD8B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D0EEB7-48EC-48E3-82F9-0FB853FD8B5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

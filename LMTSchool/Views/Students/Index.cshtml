@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Core.Model.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">添加</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                   姓名
+                </th>
+                <th>
+                  时间
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InDate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">修改</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">查看</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
